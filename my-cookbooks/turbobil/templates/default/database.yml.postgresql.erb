@@ -1,0 +1,32 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: turbobil_production
+  pool: 8
+  username: <%= @database['username'] %>
+  password: <%= @database['password'] %>
+  host: <%= @database['host'] %>
+  port: <%= @database['port'] %>
+  # socket: /tmp/postgresql.sock
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: turbobil_development
+  pool: 8
+  username: <%= @database['username'] %>
+  password: <%= @database['password'] %>
+  host: <%= @database['host'] %>
+  port: <%= @database['port'] %>
+  # socket: /tmp/postgresql.sock
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: turbobil_test
+  pool: 8
+  username: <%= @database['username'] %>
+  password: <%= @database['password'] %>
+  host: <%= @database['host'] %>
+  port: <%= @database['port'] %>
+  # socket: /tmp/postgresql.sock

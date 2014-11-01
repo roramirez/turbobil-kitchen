@@ -1,0 +1,7 @@
+{
+  "turbobil": {
+    "database_adapter": "postgresql",
+    "database_password": "changeme"
+  },
+  "run_list": ["recipe[turbobil]"]
+}

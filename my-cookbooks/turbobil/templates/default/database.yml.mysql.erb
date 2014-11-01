@@ -1,0 +1,30 @@
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: turbobil_production
+  pool: 8
+  username: <%= @database['username'] %>
+  password: <%= @database['password'] %>
+  host: <%= @database['host'] %>
+  port: <%= @database['port'] %>
+  # socket: /tmp/mysql.sock
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: turbobil_dev
+  pool: 8
+  username: <%= @database['username'] %>
+  password: <%= @database['password'] %>
+  host: <%= @database['host'] %>
+  # socket: /tmp/mysql.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: turbobil_test
+  pool: 8
+  username: <%= @database['username'] %>
+  password: <%= @database['password'] %>
+  host: <%= @database['host'] %>
+  # socket: /tmp/mysql.sock
