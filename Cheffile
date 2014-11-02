@@ -4,7 +4,7 @@
 site 'https://supermarket.getchef.com/api/v1'
 cookbook 'application_ruby'
 cookbook 'apt'
-cookbook 'user'
+cookbook 'user', :git => 'git://github.com/fnichol/chef-user'
 cookbook 'ruby_build'
 cookbook 'mysql'
 cookbook 'database'
