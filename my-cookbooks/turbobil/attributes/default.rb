@@ -13,7 +13,7 @@ default['turbobil']['revision_turbobil-rails'] = "0.3.0-pre1"
 
 
 # ruby
-default['turbobil']['ruby'] = "2.1.2p95" #(2014-05-08 revision 45877)
+default['turbobil']['ruby'] = "2.1.2"
 default['turbobil']['compile_ruby'] = true
 default['turbobil']['bundler'] = "1.6.3"
 
