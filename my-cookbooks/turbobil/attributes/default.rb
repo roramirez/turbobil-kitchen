@@ -33,12 +33,21 @@ include_attribute 'postgresql'
 default['postgresql']['version'] = "9.3"
 if platform?("ubuntu", "debian")
   default['postgresql']['packages'] = %w{libpq-dev}
+  default['mysql']['packages'] = %w{libmysqlclient-dev python-mysqldb}
 end
 default['postgresql']['username']['postgres'] = "postgres"
 default['postgresql']['password']['postgres'] = "psqlpass"
 default['postgresql']['server_host'] = "localhost"
 default['postgresql']['config']['port'] = 5432
 
+# MySQL attributes
+default['mysql']['server_host'] = "localhost"
+default['mysql']['client_host'] = "localhost"
+default['mysql']['server_root_username'] = "root"
+default['mysql']['server_root_password'] = "rootpass"
+default['mysql']['server_repl_password'] = "replpass"
+default['mysql']['server_debian_password'] = "debianpass"
+default['mysql']['server']['socket'] = "/var/run/mysqld/mysqld.sock"
 
 # database
 default['turbobil']['database_adapter'] = "postgresql"
