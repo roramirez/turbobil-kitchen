@@ -45,8 +45,6 @@ application 'app' do
     port "8080"
   end
 
-#  passenger_apache2 do
-#  end
 end
 
 include_recipe "turbobil::iptables"
