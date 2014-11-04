@@ -22,3 +22,6 @@ include_recipe "turbobil::database_#{turbobil['database_adapter']}"
 
 # Deploy
 include_recipe "turbobil::deploy"
+
+# Asterisk
+include_recipe "turbobil::asterisk"

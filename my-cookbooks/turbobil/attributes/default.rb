@@ -55,3 +55,7 @@ default['turbobil']['database_password'] = "password"
 default['turbobil']['database_user'] = default['turbobil']['user']
 
 default['turbobil']['environments'] = %w{production}
+
+# Asterisk
+default['asterisk']['source']['version'] = '1.8.31.0'
+default['turbobil']['asterisk'] = true

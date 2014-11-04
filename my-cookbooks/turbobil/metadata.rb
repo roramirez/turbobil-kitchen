@@ -15,6 +15,7 @@ depends 'application_ruby'
 depends 'postgresql'
 depends 'database'
 depends 'simple_iptables'
+depends 'asterisk'
 
 
 supports 'debian'
