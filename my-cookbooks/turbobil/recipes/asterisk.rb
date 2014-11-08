@@ -51,3 +51,19 @@ end
 link "#{agi_dir}/tbil" do
   to "#{turbobil['repo_path']}/agi_ast"
 end
+
+
+template "#{turbobil['repo_path']}/agi_ast/config.ini" do
+  source "config.ini.#{turbobil['database_adapter']}.erb"
+  user turbobil['user']
+  group turbobil['user']
+  mode 0644
+
+  variables(
+    :username => turbobil['database_user'],
+    :password => turbobil['database_password'],
+    :host     => turbobil['database_host'],
+    :port     => turbobil['database_port']
+  )
+
+end
